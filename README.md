@@ -1,5 +1,11 @@
 # VMware ESXi Hosts Jumbo Frames Checker
 
+## Table of Contents
+
+- [Overview](#overview)
+- [Parameters](#parameters)
+- [Examples](#examples)
+
 ## Overview
 
 This script is designed to check Jumbo frames from ESXi hosts managed by vCenter to VMkernel gateways and NFS storage servers. It sends 10 packets and reports an error if packet loss exceeds 80% (more than 8 packets are lost). You can run the script manually or schedule it. When running manually, you can specify a list of vCenters or specific IP addresses to be checked on all ESXi hosts.
