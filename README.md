@@ -39,18 +39,13 @@ powershell.exe check_mtu_9000.ps1 --TestHostsMTU --FromInventory
 ### Example 2:
 
 ```powershell
-powershell.exe check_mtu_9000.ps1 --TestHostsMTU --FromCLI
+powershell.exe check_mtu_9000.ps1 --TestHostsMTU --FromCLI vc1.example.com,vc2.example.com
 ```
 
 **Description**: Gets vCenter servers list from the command line. The vCenter list has to be separated with single quotes. The script loops through the provided vCenters list and checks Jumbo frames from each ESXi host to VMkernel gateways and NFS storage servers.
 
+
 ### Example 3:
-
-```powershell
-powershell.exe check_mtu_9000.ps1 --TestHostsMTU --FromCLI vc1.example.com,vc2.example.com
-```
-
-### Example 4:
 
 ```powershell
 powershell.exe check_mtu_9000.ps1 --TestIP
